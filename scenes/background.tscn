@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dnxydl80523o"]
+
+[ext_resource type="Texture2D" uid="uid://4tb7you8acmc" path="res://assets/papermirror.png" id="1_bkp1e"]
+
+[node name="Parallax2D" type="Parallax2D" unique_id=20914492]
+repeat_size = Vector2(1380, 740)
+repeat_times = 6
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=281908476]
+texture = ExtResource("1_bkp1e")

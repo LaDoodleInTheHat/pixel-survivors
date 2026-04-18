@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://n5g4ee1kiseb"]
+
+[ext_resource type="PackedScene" uid="uid://dnxydl80523o" path="res://scenes/background.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://d2oj27tg04i4o" path="res://scenes/player.tscn" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://dh1014pllj72o" path="res://scripts/camera.gd" id="3_sugp2"]
+
+[node name="main" type="Node2D" unique_id=677187304]
+
+[node name="Parallax2D" parent="." unique_id=20914492 instance=ExtResource("1_o5qli")]
+
+[node name="CharacterBody2D" parent="." unique_id=1125081652 instance=ExtResource("2_0wfyh")]
+script = ExtResource("3_sugp2")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1194204021]
+scale = Vector2(0.099999994, 0.099999994)
+position_smoothing_enabled = true
